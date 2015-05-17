@@ -2,5 +2,7 @@
 ## Total Steps By Day
 totalStepsByDay<-aggregate(steps~date,data=dataSet,sum)
 hist(totalStepsByDay$steps,main="Steps by day",col="blue",border="cyan",xlab="",ylab="",axes=TRUE)
-print(mean(totalStepsByDay$steps))
-print(median(totalStepsByDay$steps))
+totalStepsMean<-mean(totalStepsByDay$steps)
+totalStepsMedian<-median(totalStepsByDay$steps)
+print(paste("Total steps MEAN:",totalStepsMean))
+print(paste("Total steps MEDIAN:",totalStepsMedian))
