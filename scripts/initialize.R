@@ -14,5 +14,5 @@ if(!file.exists("activity.csv")){
     unzip("activity.zip")
 }
 if(!exists("dataSet")){
-    dataSet<-read.csv("activity.csv",colClasses=c("numeric", "character","numeric"))
+    dataSet<<-read.csv("activity.csv",colClasses=c("numeric", "character","numeric"))
 }

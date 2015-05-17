@@ -1,0 +1,7 @@
+base
+lubridate
+dplyr
+lattice
+plyr
+ggplot2
+knitr
